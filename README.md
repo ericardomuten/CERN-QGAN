@@ -2,7 +2,7 @@
   
 # CERN openlab Summer Student Project:<br>Quantum Generative Adversarial Networks
 
-  <a href="https://qml-hep.github.io/qml_web/data/" target="_blank"><img alt="ttH Feynman Diagram" height="200px" src="https://raw.githubusercontent.com/eraraya-ricardo/CERN-QGAN/main/assets/ttH_feyndiag.png" /></a>
+  <a href="https://qml-hep.github.io/qml_web/data/" target="_blank"><img alt="ttH Feynman Diagram" height="400px" src="https://raw.githubusercontent.com/eraraya-ricardo/CERN-QGAN/main/assets/ttH_feyndiag.png" /></a>
   
 </div>
 
