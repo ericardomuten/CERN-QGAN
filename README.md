@@ -14,6 +14,12 @@
 - [Visualization](https://qml-hep.github.io/qml_web/norm/)
 - [Data Variable Details & Definitions](https://qml-hep.github.io/qml_web/data/)
 
+## Weekly Progress
+- Week 1: Preprocessed the [optimal *ttH* dataset](https://drive.google.com/file/d/1qI-H4q8KGDggUg8YGMtrOGePfeCVGirx/view) (finding the two b-jets in the dataset with highest *pt*). Using this dataset, trained [Su Yeon's classical GANs](https://github.com/QML-HEP/qGAN/blob/main/1_classical_benchmark/ClassicalGAN.ipynb) and (modified) DijetGAN[[2](#references)].
+- Week 2: (on progress).
+
+A specific weekly To-Do list is made every week as an [issue](https://github.com/eraraya-ricardo/CERN-QGAN/issues), covering all the comments and suggestions received during Friday meeting. When all the tasks in the To-Do list are done, the issue is marked as closed.
+
 ## References
 [1] [Vasileios Belis, Samuel González-Castillo, Christina Reissel, Sofia Vallecorsa, Elías F. Combarro, Günther Dissertori, & Florentin Reiter. (2021). Higgs analysis with quantum classifiers.](https://arxiv.org/abs/2104.07692)
 
