@@ -11,7 +11,7 @@
 
 ## Datasets[[1](#references)]
 - [Downloads](https://qml-hep.github.io/qml_web/downloads/)
-- [Visualization](https://qml-hep.github.io/qml_web/norm/vanilla/)
+- [Visualization](https://qml-hep.github.io/qml_web/norm/)
 - [Data Variable Details & Definitions](https://qml-hep.github.io/qml_web/data/)
 
 ## References
