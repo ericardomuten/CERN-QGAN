@@ -18,7 +18,8 @@
 
 ## Weekly Progress
 - Week 1: Preprocessed the [optimal *ttH* dataset](https://drive.google.com/file/d/1qI-H4q8KGDggUg8YGMtrOGePfeCVGirx/view) (finding the two b-jets in the dataset with highest *pt*). Using this dataset, trained [Su Yeon's classical GANs](https://github.com/QML-HEP/qGAN/blob/main/1_classical_benchmark/ClassicalGAN.ipynb) and (modified) DijetGAN[[2](#references)].
-- Week 2: (on progress).
+- Week 2: Tested the cross-entropy loss for the generator, set Wasserstein distance as the evaluation metric.
+- Week 3: (on progress).
 
 A specific weekly To-Do list is made every week as an [issue](https://github.com/eraraya-ricardo/CERN-QGAN/issues), covering all the comments and suggestions received during Friday meeting. When all the tasks in the To-Do list are done, the issue is marked as closed.
 
