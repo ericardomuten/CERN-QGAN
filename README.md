@@ -27,13 +27,16 @@ A specific weekly To-Do list is made every week as an [issue](https://github.com
 1. Download the [optimal dataset](https://drive.google.com/file/d/1qI-H4q8KGDggUg8YGMtrOGePfeCVGirx/view).
 2. Take only the positive class (y = 1): the events which the Higgs are being produced, as we are not interested in reproducing the background data.
 3. The 67 features in the dataset are arranged as follow:
-  - > 1st jet, 2nd jet, 3rd jet, ..., 7th jet, MET, lepton
-  - The jets in total have 7𝑥8=56 features, where every jet has 8 features, which are ordered as:<br>
-      > ["pt", "eta", "phi", "en", "px", "py", "pz", "btag"]
-  - MET has 4 features, which are ordered as:<br>
-      > ["phi", "pt", "px", "py"]
-  - lepton has 7 features, which are ordered as:<br>
-      > ["pt", "eta", "phi", "en", "px", "py", "pz"]
+    - > 1st jet, 2nd jet, 3rd jet, ..., 7th jet, MET, lepton
+    - The jets in total have 7𝑥8=56 features, where every jet has 8 features, which are ordered as:<br>
+       > ["pt", "eta", "phi", "en", "px", "py", "pz", "btag"]
+    - MET has 4 features, which are ordered as:<br>
+       > ["phi", "pt", "px", "py"]
+    - lepton has 7 features, which are ordered as:<br>
+       > ["pt", "eta", "phi", "en", "px", "py", "pz"]
+4. We then preprocess the training set so that the training set contains:
+     - Only the two b-jets (jets with btag=1) with the highest "pt".
+     - For every jets, only keep the "pt", "eta", "phi", "en" features.
 
 Notes:
 
@@ -41,20 +44,33 @@ Notes:
     lepton = (electron or muon)
     btag = either 1 or 0, 1 means the jet is the b-jet, 0 otherwise
 
+> In total, the final training set should have 2𝑥4=8 features.
 
 ## Research
 ### Classical GANs
 #### DijetGAN[[2](#references)] (Edo)
-> Settings: optimal dataset
+> Settings: optimal dataset, 200 epochs, batch size 128, optimizer as explained in reference [[2](#references)].
 
 - generator loss: MSE
 
 | Filter Size | Stride | Wasserstein distance |
 | :---------: | :----: | :------------------: |
+| 5 | 1 |  |
 | 3 | 1 | 0.069790 |
 
 - generator loss: cross-entropy
+
+| Filter Size | Stride | Wasserstein distance |
+| :---------: | :----: | :------------------: |
+| 5 | 1 | 0.083107 |
+| 3 | 1 | 0.045924 |
+
 - WGAN but with DijetGAN architecture
+
+| Filter Size | Stride | Wasserstein distance |
+| :---------: | :----: | :------------------: |
+| 5 | 1 |  |
+| 3 | 1 |  |
 
 ## References
 [1] [Vasileios Belis, Samuel González-Castillo, Christina Reissel, Sofia Vallecorsa, Elías F. Combarro, Günther Dissertori, & Florentin Reiter. (2021). Higgs analysis with quantum classifiers.](https://arxiv.org/abs/2104.07692)
