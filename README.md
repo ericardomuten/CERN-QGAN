@@ -8,6 +8,11 @@
   
 </div>
 
+<p align="middle">
+  <a href="https://qml-hep.github.io/qml_web/data/" target="_blank"><img height="400px" src="https://raw.githubusercontent.com/eraraya-ricardo/CERN-QGAN/main/assets/ttH_feyndiag.png" title="ttH Feynman Diagram" /></a> <br>
+  <a>Example of Leading Order (LO) Feynman diagram of the signal process in red and the dominant background process in green. The Higgs Boson is produced in association with t¯t via gluon fusion and it decays to b¯b.</a>
+</p>
+
 ## Supervisor
 [Dr. Sofia Vallecorsa](https://inspirehep.net/authors/1028732)
 
