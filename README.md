@@ -65,7 +65,7 @@ Notes:
 | Filter Size | Stride | Wasserstein distance |
 | :---------: | :----: | :------------------: |
 | 5 | 1 |  |
-| 3 | 1 | 0.069790 |
+| 3 | 1 | 0.050658 |
 
 - generator loss: cross-entropy
 
