@@ -69,14 +69,15 @@ Notes:
 
 - generator loss: cross-entropy
 
-| Generator Filter Size | Discriminator Filter Size | Stride | Wasserstein distance |
-| :---------: | :---------: | :----: | :------------------: |
-| 7 | 7 | 1 | 0.054331 |
-| 5 | 5 | 1 | 0.083107 |
-| 3 | 3 | 1 | 0.045924 |
-| 2 | 2 | 1 | 0.050755 |
-| 2 | 3 | 1 | 0.048710 |
-| 2 | 5 | 1 | 0.057567 |
+| Generator Filter Size | Discriminator Filter Size | Generator Stride | Discriminator Stride | Wasserstein distance |
+| :---------: | :---------: | :----: | :----: | :------------------: |
+| 7 | 7 | 1 | 1 | 0.054331 |
+| 5 | 5 | 1 | 1 | 0.083107 |
+| 3 | 3 | 1 | 1 | 0.045924 |
+| 3 | 3 | 2 | 2 |  |
+| 2 | 2 | 1 | 1 | 0.050755 |
+| 2 | 3 | 1 | 1 | 0.048710 |
+| 2 | 5 | 1 | 1 | 0.057567 |
 
 - WGAN but with DijetGAN architecture (Wasserstein loss)
 
