@@ -74,7 +74,7 @@ Notes:
 | 5 | 1 | 0.083107 |
 | 3 | 1 | 0.045924 |
 
-- WGAN but with DijetGAN architecture
+- WGAN but with DijetGAN architecture (Wasserstein loss)
 
 | Filter Size | Stride | Wasserstein distance |
 | :---------: | :----: | :------------------: |
