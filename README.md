@@ -71,6 +71,7 @@ Notes:
 
 | Generator Filter Size | Discriminator Filter Size | Stride | Wasserstein distance |
 | :---------: | :---------: | :----: | :------------------: |
+| 7 | 7 | 1 | 0.054331 |
 | 5 | 5 | 1 | 0.083107 |
 | 3 | 3 | 1 | 0.045924 |
 | 2 | 2 | 1 | 0.050755 |
