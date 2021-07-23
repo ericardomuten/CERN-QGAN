@@ -11,17 +11,50 @@
 ## Supervisor
 [Dr. Sofia Vallecorsa](https://inspirehep.net/authors/1028732)
 
+## Weekly Progress
+- Week 1: Preprocessed the [optimal *ttH* dataset](https://drive.google.com/file/d/1qI-H4q8KGDggUg8YGMtrOGePfeCVGirx/view) (finding the two b-jets in the dataset with highest *pt*). Using this dataset, trained [Su Yeon's classical GANs](https://github.com/QML-HEP/qGAN/blob/main/1_classical_benchmark/ClassicalGAN.ipynb) and (modified) DijetGAN[[2](#references)].
+- Week 2: Tested the cross-entropy loss for the generator, set Wasserstein distance as the evaluation metric, code and prepare the WGAN.
+- Week 3: (on progress).
+
+A specific weekly To-Do list is made every week as an [issue](https://github.com/eraraya-ricardo/CERN-QGAN/issues), covering all the comments and suggestions received during Friday meeting. When all the tasks in the To-Do list are done, the issue is marked as closed.
+
 ## Datasets[[1](#references)]
 - [Downloads](https://qml-hep.github.io/qml_web/downloads/)
 - [Visualization](https://qml-hep.github.io/qml_web/norm/)
 - [Data Variable Details & Definitions](https://qml-hep.github.io/qml_web/data/)
 
-## Weekly Progress
-- Week 1: Preprocessed the [optimal *ttH* dataset](https://drive.google.com/file/d/1qI-H4q8KGDggUg8YGMtrOGePfeCVGirx/view) (finding the two b-jets in the dataset with highest *pt*). Using this dataset, trained [Su Yeon's classical GANs](https://github.com/QML-HEP/qGAN/blob/main/1_classical_benchmark/ClassicalGAN.ipynb) and (modified) DijetGAN[[2](#references)].
-- Week 2: Tested the cross-entropy loss for the generator, set Wasserstein distance as the evaluation metric.
-- Week 3: (on progress).
+## Dataset Preprocessing (Fixed)
+1. Download the [optimal dataset](https://drive.google.com/file/d/1qI-H4q8KGDggUg8YGMtrOGePfeCVGirx/view).
+2. Take only the positive class (y = 1): the events which the Higgs are being produced, as we are not interested in reproducing the background data.
+3. The 67 features in the dataset are arranged as follow:
+  - > 1st jet, 2nd jet, 3rd jet, ..., 7th jet, MET, lepton
+  - The jets in total have 7𝑥8=56 features, where every jet has 8 features, which are ordered as:<br>
+      > ["pt", "eta", "phi", "en", "px", "py", "pz", "btag"]
+  - MET has 4 features, which are ordered as:<br>
+      > ["phi", "pt", "px", "py"]
+  - lepton has 7 features, which are ordered as:<br>
+      > ["pt", "eta", "phi", "en", "px", "py", "pz"]
 
-A specific weekly To-Do list is made every week as an [issue](https://github.com/eraraya-ricardo/CERN-QGAN/issues), covering all the comments and suggestions received during Friday meeting. When all the tasks in the To-Do list are done, the issue is marked as closed.
+Notes:
+
+    MET = missing transverse momentum
+    lepton = (electron or muon)
+    btag = either 1 or 0, 1 means the jet is the b-jet, 0 otherwise
+
+
+## Research
+### Classical GANs
+#### DijetGAN[[2](#references)] (Edo)
+> Settings: optimal dataset
+
+- generator loss: MSE
+
+| Filter Size | Stride | Wasserstein distance |
+| :---------: | :----: | :------------------: |
+| 3 | 1 | 0.069790 |
+
+- generator loss: cross-entropy
+- WGAN but with DijetGAN architecture
 
 ## References
 [1] [Vasileios Belis, Samuel González-Castillo, Christina Reissel, Sofia Vallecorsa, Elías F. Combarro, Günther Dissertori, & Florentin Reiter. (2021). Higgs analysis with quantum classifiers.](https://arxiv.org/abs/2104.07692)
