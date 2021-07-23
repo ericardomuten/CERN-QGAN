@@ -75,6 +75,7 @@ Notes:
 | 3 | 3 | 1 | 0.045924 |
 | 2 | 2 | 1 | 0.050755 |
 | 2 | 3 | 1 | 0.048710 |
+| 2 | 5 | 1 | 0.057567 |
 
 - WGAN but with DijetGAN architecture (Wasserstein loss)
 
