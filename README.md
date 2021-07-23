@@ -25,8 +25,9 @@ A specific weekly To-Do list is made every week as an [issue](https://github.com
 
 ## Dataset Preprocessing (Fixed)
 1. Download the [optimal dataset](https://drive.google.com/file/d/1qI-H4q8KGDggUg8YGMtrOGePfeCVGirx/view).
-2. Take only the positive class (y = 1): the events which the Higgs are being produced, as we are not interested in reproducing the background data.
-3. The 67 features in the dataset are arranged as follow:
+2. Use only the training set, we don't need the validation and test set for training GAN models.
+3. Take only the positive class (y = 1): the events which the Higgs are being produced, as we are not interested in reproducing the background data.
+4. The 67 features in the dataset are arranged as follow:
     - > 1st jet, 2nd jet, 3rd jet, ..., 7th jet, MET, lepton
     - The jets in total have 7𝑥8=56 features, where every jet has 8 features, which are ordered as:<br>
        > ["pt", "eta", "phi", "en", "px", "py", "pz", "btag"]
@@ -34,7 +35,7 @@ A specific weekly To-Do list is made every week as an [issue](https://github.com
        > ["phi", "pt", "px", "py"]
     - lepton has 7 features, which are ordered as:<br>
        > ["pt", "eta", "phi", "en", "px", "py", "pz"]
-4. We then preprocess the training set so that the training set contains:
+5. We then preprocess the training set so that the training set contains:
      - Only the two b-jets (jets with btag=1) with the highest "pt".
      - For every jets, only keep the "pt", "eta", "phi", "en" features.
 
@@ -45,6 +46,11 @@ Notes:
     btag = either 1 or 0, 1 means the jet is the b-jet, 0 otherwise
 
 > In total, the final training set should have 2𝑥4=8 features.
+
+<p align="middle">
+  <img src="https://github.com/eraraya-ricardo/CERN-QGAN/blob/main/assets/dataset_distribution.png" title="Training Set Distribution." /> <br>
+  <a>Training Set Distribution.</a>
+</p>
 
 ## Research
 ### Classical GANs
