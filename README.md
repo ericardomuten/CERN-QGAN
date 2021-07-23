@@ -8,7 +8,7 @@
 
 <p align="middle">
   <a href="https://qml-hep.github.io/qml_web/data/" target="_blank"><img height="400px" src="https://raw.githubusercontent.com/eraraya-ricardo/CERN-QGAN/main/assets/ttH_feyndiag.png" title="ttH Feynman Diagram" /></a> <br>
-  <a>Example of Leading Order (LO) Feynman diagram of the signal process in red and the dominant background process in green. The Higgs Boson is produced in association with <img src="https://render.githubusercontent.com/render/math?math=t\overline{t}"> via gluon fusion and it decays to b¯b.</a>
+  <a>Example of Leading Order (LO) Feynman diagram of the signal process in red and the dominant background process in green[[1](#references)]. The Higgs Boson is produced in association with <img src="https://render.githubusercontent.com/render/math?math=t\overline{t}"> via gluon fusion and it decays to <img src="https://render.githubusercontent.com/render/math?math=b\overline{b}">. The channel is semi-leptonic as only one of the W bosons decays into leptons.</a>
 </p>
 
 ## Supervisor
