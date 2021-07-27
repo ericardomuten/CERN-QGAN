@@ -70,7 +70,7 @@ Notes:
 - generator loss: cross-entropy
 
 | Generator Filter Size | Discriminator Filter Size | Generator Stride | Discriminator Stride | Wasserstein distance | Notes |
-| :---------: | :---------: | :----: | :----: | :------------------: |
+| :---------: | :---------: | :----: | :----: | :------------------: | :------------------: |
 | 7 | 7 | 1 | 1 | 0.054331 | - |
 | 5 | 5 | 1 | 1 | 0.070837 | - |
 | 5 | 5 | 2 | 2 | not converging | - |
