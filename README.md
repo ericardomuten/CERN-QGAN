@@ -69,17 +69,18 @@ Notes:
 
 - generator loss: cross-entropy
 
-| Generator Filter Size | Discriminator Filter Size | Generator Stride | Discriminator Stride | Wasserstein distance |
+| Generator Filter Size | Discriminator Filter Size | Generator Stride | Discriminator Stride | Wasserstein distance | Notes |
 | :---------: | :---------: | :----: | :----: | :------------------: |
-| 7 | 7 | 1 | 1 | 0.054331 |
-| 5 | 5 | 1 | 1 | 0.070837 |
-| 5 | 5 | 2 | 2 | not converging |
-| 3 | 3 | 1 | 1 | 0.045924 |
-| 3 | 3 | 2 | 2 | not converging |
-| 3 | 2 | 1 | 1 | 0.046144 |
-| 2 | 2 | 1 | 1 | 0.050755 |
-| 2 | 3 | 1 | 1 | 0.048710 |
-| 2 | 5 | 1 | 1 | 0.057567 |
+| 7 | 7 | 1 | 1 | 0.054331 | - |
+| 5 | 5 | 1 | 1 | 0.070837 | - |
+| 5 | 5 | 2 | 2 | not converging | - |
+| 3 | 3 | 1 | 1 | 0.045924 | - |
+| 3 | 3 | 1 | 1 | 0.040866 | With extra TransposeConv2D layer with 64 channels, convert the dataset's range to [0, 1] |
+| 3 | 3 | 2 | 2 | not converging | - |
+| 3 | 2 | 1 | 1 | 0.046144 | - |
+| 2 | 2 | 1 | 1 | 0.050755 | - |
+| 2 | 3 | 1 | 1 | 0.048710 | - |
+| 2 | 5 | 1 | 1 | 0.057567 | - |
 
 - WGAN but with DijetGAN architecture (Wasserstein loss)
 
