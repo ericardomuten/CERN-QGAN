@@ -14,6 +14,10 @@
 ## Supervisor
 [Dr. Sofia Vallecorsa](https://inspirehep.net/authors/1028732)
 
+## Talks
+- [CERN Summer Student Session 2021](https://indico.cern.ch/event/863980/)
+- [CERN openlab Summer Student Lightning Talks](https://indico.cern.ch/event/1054531/)
+
 ## Weekly Progress
 - Week 1: Preprocessed the [<img src="https://render.githubusercontent.com/render/math?math=t\overline{t}H(b\overline{b})"> optimal dataset](https://drive.google.com/file/d/1qI-H4q8KGDggUg8YGMtrOGePfeCVGirx/view) (finding the two b-jets in the dataset with highest *pt*). Using this dataset, trained [Su Yeon's classical GANs](https://github.com/QML-HEP/qGAN/blob/main/1_classical_benchmark/ClassicalGAN.ipynb) and (modified) DijetGAN[[2](#references)].
 - Week 2: Tested the cross-entropy loss for the generator, set Wasserstein distance as the evaluation metric, code and prepare the WGAN.
